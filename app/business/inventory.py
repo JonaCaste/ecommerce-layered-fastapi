@@ -28,6 +28,8 @@ class InventoryService:
         if not isinstance(new_quantity, int) or new_quantity < 0:
             raise ValueError("The 'quantity' must be a non-negative integer.")
         
+        #@todo if product not exist in db, we must create it
+        
         InventoryData.update_inventory_quantity(product_id, new_quantity)
         return data
     

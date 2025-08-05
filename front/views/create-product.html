@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create-Product</title>
+    <link rel="stylesheet" href="../styles/create-product.css">
+</head>
+<body>
+
+    <header>
+        <img src="../logo_ecommerce.jpg" alt="logo" class="logo">
+        <div class="nav-buttons">
+        <button>
+            <a href="./create-product.html" >
+                Create Product
+            </a>
+        </button>
+        <button >
+            <a href="./purchase.html" >
+                Purchase
+            </a>
+        </button>
+        <button >
+            <a href="./login.html" >
+                Login
+            </a>
+        </button>
+        <button >
+            <a href="./register.html" >
+                Register
+            </a>
+        </button>
+        <button >
+            <a href="./products.html" >
+                Products
+            </a>
+        </button>
+        <button >
+            <a href="./update-inventory.html" >
+                Update Inventory
+            </a>
+        </button>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <form id="create-product-form">
+            <h3>Create Product</h3>
+
+            <label for="name">Product Name</label>
+            <br>
+            <input type="text" id="name" placeholder="Product Name" required><br><br>
+            <label for="price">Price</label>
+            <br>
+            <input type="number" id="price" placeholder="Price" required><br><br>
+            <label for="description">Description</label>
+            <br>
+            <textarea id="description" placeholder="Description" required></textarea><br><br>
+            <button type="submit">Create Product</button>
+        </form>
+    </div>
+    <script src="../js/create-product.js"></script>
+</body>
+</html>
