@@ -47,17 +47,6 @@ def test_purchase_product_not_found():
             PurchaseService.purchase_product(data)
 
 
-# def test_purchase_product_inventory_not_found():
-#     data = {"idProduct": 1, "idUser": 2, "quantity": 3}
-#     mock_product = {"id": 1, "price": 50.0}
-
-#     with patch("business.purchase.ProductBusiness.get_product_by_id", return_value=mock_product), \
-#          patch("business.purchase.InventoryService.get_inventory_by_product", return_value=None):
-
-#         with pytest.raises(ValueError, match="Inventory for the specified product not found."):
-#             PurchaseService.purchase_product(data)
-
-
 def test_purchase_product_insufficient_inventory():
     data = {"idProduct": 1, "idUser": 2, "quantity": 10}
     mock_product = {"id": 1, "price": 20.0}
